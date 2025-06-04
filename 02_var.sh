@@ -12,7 +12,7 @@ echo "name of this machine $HOSTNAME"
 
 readonly college="kse"
 echo "College name is $college"
-college="JSPM"
+college="ABC"
 echo $college
 
 
