@@ -1,0 +1,2 @@
+Hello i have started my devops and cloud journey be begining with bash script
+till now, i have learning the basic fundamental of bash such as var, arth,loops,ip, cond etc.
