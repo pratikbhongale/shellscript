@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 read -p "enter your marks:" marks
 #double [[]] are more enchanced version 
 if [[ $marks -gt 40 ]]
