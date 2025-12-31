@@ -1,0 +1,31 @@
+Starting with Bash Scripting 
+#!/bin/bash: This is an shebang line which we need to write before we start writing the script 
+echo is used to print
+ex- echo "Hello World!!"
+When creating a variable we can't give spaces before and after the = sign
+ex- name="ABC"
+We can use nano or vim editor to write a script
+vim file.sh or nano file.sh
+we have to set permission after the script has been written
+chmod +x file.sh #to make the file executable
+to run the file we can use following command
+./file.sh
+bash file.sh
+No need to add ; after everyline
+if we have 2 var in the file, we can also add the parameters outside script in cli 
+./file.sh BOB buddy
+To take a user input in bash we use read keyword
+ex- echo "What is your name?"
+read name #we are storing the value in name variable
+echo "Hi $name"
+OR
+read -p "What's your name?" name
+echo "hi $name"
+Created a script which displays date, hostname, ls, netstat -tulp, and other basic cmds
+we can pass args seperately when executing the file
+echo "$1"
+echo "$2"
+./args.sh cat dog # here we are passing 2 arguments
+to print all the args = echo "$@"
+Array : we can store element in enclosed () no sepration using ,
+and to access the element: echo "${myarray[0]}"
