@@ -1,6 +1,7 @@
 #!/bin/bash
-for num in {1..10}
+users="Dev QA Prod"
+for user in $users
 do
-echo $((num*num))
+echo $user
 done
 
