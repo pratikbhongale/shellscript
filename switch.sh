@@ -44,7 +44,7 @@ echo "you chose black"
 echo "The color you chose will not be considered"
 esac
 comment
-
+<<comment
 read -p "Enter yes or no: " option
 case $option in
 y|Y|YES|Yes)
@@ -57,4 +57,42 @@ echo "You selected No"
 echo "The Option you have entered is not Valid!!"
 ;;
 esac
+comment
+<<comment
+read -p "Enter the department: " dept
+case $dept in
+Computer|computer)
+echo "You selected Computer Department to view!!"
+;;
+Civil|civil)
+echo "You selected Civil Department to view!!"
+;;
+Mechanical|mechanical)
+echo "You selected Mechanical Department to view!!"
+;;
+ENTC|entc)
+echo "You selected ENTC Department to view!!"
+;;
+*)
+echo "The Option is not available"
+;;
+esac
+comment
 
+read -p "Enter the command you want to execute: " cmd
+case $cmd in
+hostname|host)
+echo "Displaying Host....."
+sleep 2
+hostname
+;;
+list)
+echo "Listing the file"
+ls -h
+;;
+date)
+echo "Today's Date is:" date
+;;
+*)
+echo "No option available to select"
+esac
